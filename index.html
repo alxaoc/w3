@@ -1,39 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="utf8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Test</title>
+</head>
+<body>
   <header>
-    <meta charset="utf8">
-    <title>Test</title>
-  </header>
-  <body>
-    <header>
-      <img src="/img/logo.png">
+    <div>
+      <img src="/img/logo.png" alt="Logo" width="200" height="200">
+    </div>
+    <div>
       <h1>Test</h1>
-      <p>Test text</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Main page</a></li>
-          <li><a href="#">Next page</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <article>
-        <section>
-          <h2>First section</h2>
-          <p>Text first section</p>
-        </section>
-        <section>
-          <h2>Next section</h2>
-          <p>Text next section</p>
-        </section>
-        <section>
-          <h2>Third section</h2>
-          <p>Text thirdt section</p>
-        </section>
-      </article>
-    </main>
-    <footer>
-      <p>Text footer</p>
-    </footer>
-  </body>
+    </div>
+    <p>Test text</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Main page</a></li>
+        <li><a href="next.html">Next page</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <section>
+        <h2>First section</h2>
+        <p>Text first section</p>
+      </section>
+      <section>
+        <h2>Next section</h2>
+        <p>Text next section</p>
+      </section>
+      <section>
+        <h2>Third section</h2>
+        <p>Text thirdt section</p>
+      </section>
+    </article>
+  </main>
+  <hr>
+  <footer>
+    <p>Text footer</p>
+  </footer>
+</body>
+<script src="js/particles.min.js"></script>
+<script>
+  particlesJS.load('particles-js', 'particles.json', function () {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
 </html>
