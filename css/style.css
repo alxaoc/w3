@@ -1,3 +1,109 @@
 body {
     background-color:grey;
 }
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    margin-left: 20px; /* Задайте відступ від логотипу на ваш розсуд */
+}
+
+/* Медіа-запит для адаптивної розмітки */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.logo-container {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: dimgrey;
+    border: 3px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Додайте відступ знизу до логотипу */
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+}
+
+.logo-container:hover {
+    background-color: lightslategray;
+}
+
+
+#terminal-text {
+    overflow: hidden;
+    border-right: .15em solid green; /* Додано мерехтливий курсор */
+    white-space: nowrap; /* Забороняє перенесення тексту */
+    margin: 0 auto; /* Вирівнювання тексту */
+    letter-spacing: .15em; /* Прогалина між символами */
+    animation: typing 3s steps(40, end); /* Тривалість та анімація набору тексту */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/**/
