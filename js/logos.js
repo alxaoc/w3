@@ -1,8 +1,8 @@
 var logos = [
-    "./img/logo.png",
-    "./img/logo_1.png",
-    "./img/logo_2.png",
-    "./img/logo_3.png"
+    "../img/logo.png",
+    "../img/logo_1.png",
+    "../img/logo_2.png",
+    "../img/logo_3.png"
 ];
 
 var logoContainer = document.getElementById("logo-container");
