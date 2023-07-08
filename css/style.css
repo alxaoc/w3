@@ -96,7 +96,7 @@ nav ul li a {
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     flex-wrap: wrap;
     align-items: stretch;
 }
@@ -104,7 +104,7 @@ nav ul li a {
 .column {
     flex: 1;
     background-color: #c7c7c7;
-    padding: 20px;
+    padding: 10px;
     margin: 10px 10px;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Додати тінь до контейнера */
@@ -115,10 +115,12 @@ footer {
     color: #fff;
     padding: 0;
     text-align: center;
-    position: fixed;
+    position: page;
     left: 0;
     bottom: 0;
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 footer p {
     text-align: center;
