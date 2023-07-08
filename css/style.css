@@ -9,7 +9,9 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Додати тінь до контейнера */
 }
-
+hr {
+    border: 1px solid #333333;
+}
 
 nav ul {
     list-style-type: none;
@@ -34,7 +36,7 @@ nav ul li a {
 
 .title {
     flex: 1;
-    text-align: center;
+    text-align: left;
     margin-left: 20px; /* Задайте відступ від логотипу на ваш розсуд */
 }
 
@@ -57,12 +59,13 @@ nav ul li a {
     border-radius: 50%;
     overflow: hidden;
     background-color: dimgrey;
-    border: 3px solid #000;
+    border: 2px solid #1d1d1d;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
     margin-bottom: 10px; /* Додайте відступ знизу до логотипу */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Додати тінь до контейнера */
 }
 
 .logo-container img {
