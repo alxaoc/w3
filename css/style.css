@@ -6,6 +6,8 @@ header {
     background-color: #333;
     color: #fff;
     padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Додати тінь до контейнера */
 }
 
 
@@ -83,9 +85,11 @@ nav ul li a {
 
 .column {
     flex: 1;
-    background-color: #f2f2f2;
+    background-color: #c7c7c7;
     padding: 20px;
     margin: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Додати тінь до контейнера */
 }
 
 footer {
