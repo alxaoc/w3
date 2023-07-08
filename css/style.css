@@ -6,6 +6,7 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px;
+
 }
 
 nav ul {
@@ -42,7 +43,7 @@ nav ul li a {
 }
 .logo-container {
     width: 150px;
-    height: auto;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     background-color: dimgrey;
@@ -56,7 +57,7 @@ nav ul li a {
 
 .logo-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .logo-container:hover {
