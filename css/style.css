@@ -5,9 +5,9 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
-
+    padding: 30px;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -31,6 +31,8 @@ nav ul li a {
 }
 
 .title {
+    flex: 1;
+    text-align: center;
     margin-left: 20px; /* Задайте відступ від логотипу на ваш розсуд */
 }
 
@@ -40,10 +42,16 @@ nav ul li a {
         flex-direction: column;
         align-items: flex-start;
     }
+    .logo {
+        width: 50%; /* Задаємо ширину логотипу для більших екранів */
+    }
+    h1 {
+        font-size: 40px; /* Задаємо більший розмір заголовка для більших екранів */
+    }
 }
 .logo-container {
     width: 150px;
-    height: 150px;
+    height: auto;
     border-radius: 50%;
     overflow: hidden;
     background-color: dimgrey;
@@ -65,35 +73,19 @@ nav ul li a {
 }
 
 
-#terminal-text {
-    overflow: hidden;
-    border-right: .15em solid green; /* Додано мерехтливий курсор */
-    white-space: nowrap; /* Забороняє перенесення тексту */
-    margin: 0 auto; /* Вирівнювання тексту */
-    letter-spacing: .15em; /* Прогалина між символами */
-    animation: typing 3s steps(40, end); /* Тривалість та анімація набору тексту */
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
 .container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .column {
     flex: 1;
     background-color: #f2f2f2;
     padding: 20px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 footer {
