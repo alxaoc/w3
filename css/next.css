@@ -1,0 +1,161 @@
+body {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.dark body {
+    background-color: #333;
+    color: #fff;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    /*box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);*/
+}
+
+.container {
+    margin: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: dimgrey;
+    border: 2px solid #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Додайте відступ знизу до логотипу */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Додати тінь до контейнера */
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container:hover {
+    background-color: lightslategray;
+}
+
+.title {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px; /* Задайте відступ від логотипу на ваш розсуд */
+}
+
+/*nav {*/
+/*    background-color: #333;*/
+/*    color: #fff;*/
+/*}*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    /*box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);*/
+}
+
+.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+
+.dark header, .dark footer,
+.dark button, .dark nav ul li a {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    /*border: 1px solid #333;*/
+}
+
+.theme-toggle {
+    cursor: pointer;
+}
+
+#theme-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.dark #theme-icon {
+    filter: invert(1);
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 50%; /* Задаємо ширину логотипу для більших екранів */
+    }
+
+    h1 {
+        font-size: 30px; /* Задаємо більший розмір заголовка для більших екранів */
+    }
+
+    .container::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .mobile-footer {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+}
+
+footer p {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
