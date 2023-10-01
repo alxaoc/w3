@@ -105,17 +105,23 @@ button {
     align-items: stretch;
 }
 
-.column {
+.column-next {
     flex: 1;
-    background-color: #c7c7c7;
+    background-color: #333;
+    color: #fff;
     padding: 10px;
     margin: 10px 10px;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Додати тінь до контейнера */
 }
 
+.dark .column-next {
+    background-color: #fff;
+    color: #333;
+}
+
 .dark {
-    background-color: #222;
+    background-color: #333;
     color: #fff;
 }
 
@@ -155,7 +161,7 @@ button {
         font-size: 30px; /* Задаємо більший розмір заголовка для більших екранів */
     }
 
-    .container::after {
+    .container-next::after {
         content: "";
         display: table;
         clear: both;
