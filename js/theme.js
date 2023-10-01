@@ -10,5 +10,5 @@ function toggleTheme() {
 //     var themeIcon = document.getElementById('theme-icon');
 //
 //     body.classList.toggle('dark');
-//     themeIcon.src = body.classList.contains('dark') ? 'icon-dark.png' : 'icon-light.png';
+//     themeIcon.src = body.classList.contains('dark') ? './img/icon-dark.png' : './img/icon-light.png';
 // }

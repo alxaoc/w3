@@ -97,6 +97,23 @@ button {
     /*box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);*/
 }
 
+.container-next {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.column {
+    flex: 1;
+    background-color: #c7c7c7;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Додати тінь до контейнера */
+}
+
 .dark {
     background-color: #222;
     color: #fff;
